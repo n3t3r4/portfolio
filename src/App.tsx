@@ -4,6 +4,7 @@ import "./App.css";
 import { Start } from "./components/StartBar";
 import { Desktop } from "./components/Desktop";
 import { StartMenu } from "./components/StartMenu";
+import { Window } from "./components/Window";
 
 function App() {
   const [startMenuDesktop, setStartMenuDesktop] = useState(Boolean);
@@ -19,9 +20,9 @@ function App() {
   return (
     <>
       <section className="bg-[#008080]">
-        <div className="min-h-screen flex flex-col justify-between">
+        <div className="flex flex-col justify-between min-h-screen">
           <Desktop />
-
+          <Window />
           <StartMenu visible={startMenuDesktop} />
           <Start onSubmit={handleStartMenu} />
         </div>
