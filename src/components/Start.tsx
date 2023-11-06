@@ -10,7 +10,7 @@ export function Start() {
         className={
           startMenu
             ? `shadow-inner shadow-black cursor-pointer`
-            : `cursor-pointer`
+            : `cursor-pointer `
         }
         onClick={() => setStartMenu(!startMenu)}
       >
