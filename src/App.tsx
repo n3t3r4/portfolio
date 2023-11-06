@@ -20,9 +20,9 @@ function App() {
   return (
     <>
       <section className="bg-[#008080]">
-        <div className="flex flex-col justify-between min-h-screen">
+        <div className="flex flex-col justify-between min-h-screen max-md:min-h-[94vh]">
           <Desktop />
-          <Window />
+          {/* <Window /> */}
           <StartMenu visible={startMenuDesktop} />
           <Start onSubmit={handleStartMenu} />
         </div>
